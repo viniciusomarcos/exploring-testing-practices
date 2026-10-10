@@ -42,10 +42,19 @@ Escolha uma prática ou dado de teste relevante e explique com suas próprias pa
 
 ---
 
-## Respostas
+### Respostas
 
-Repositório: `<URL_DO_REPOSITÓRIO>`
+Repositório: https://github.com/browser-use/browser-use  
+URL TestMiner: https://andrehora.github.io/testminer/#browser-use  
 
-URL TestMiner: `<URL_NO_TESTMINER>`
+**Explicação:**
 
-Explicação: `<SUA_EXPLICAÇÃO>`
+Ao analisar o projeto no TestMiner, foquei em dois pontos principais: a organização dos arquivos de teste e a evolução deles ao longo das versões.
+
+Na seção de **Test Location**, fica evidente que o repositório adota a prática de manter os testes isolados da aplicação principal. Dos 84 testes identificados, 83 estão concentrados na pasta raiz `tests`, e apenas arquivos pontuais ficam em outros diretórios. Olhando as categorias destacadas no painel (`llm`, `cli`, `action`, `click`), nota-se que os testes foram estruturados para cobrir individualmente as ações do agente e as interações no navegador, permitindo validar comandos isolados sem precisar executar o sistema inteiro.
+
+Além disso, o gráfico de **Test History** mostra a evolução da suíte ao longo do ciclo de vida do projeto: na versão inicial (`0.1.0`), havia menos de 10 testes cadastrados; na versão intermediária (`0.5.6`), esse número subiu para cerca de 60; e na versão recente (`0.13.11`), já ultrapassa a marca de 130 testes. Esse crescimento contínuo demonstra que a escrita de testes acompanhou a maturidade da ferramenta, garantindo estabilidade e evitando regressões à medida que novas integrações com navegadores e LLMs foram adicionadas.
+
+![Localização dos testes no TestMiner](img/test-location.png)
+
+![Crescimento dos testes ao longo das releases](img/test-history.png)
