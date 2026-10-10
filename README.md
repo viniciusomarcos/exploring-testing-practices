@@ -55,6 +55,6 @@ Na seção de **Test Location**, fica evidente que o repositório adota a práti
 
 Além disso, o gráfico de **Test History** mostra a evolução da suíte ao longo do ciclo de vida do projeto: na versão inicial (`0.1.0`), havia menos de 10 testes cadastrados; na versão intermediária (`0.5.6`), esse número subiu para cerca de 60; e na versão recente (`0.13.11`), já ultrapassa a marca de 130 testes. Esse crescimento contínuo demonstra que a escrita de testes acompanhou a maturidade da ferramenta, garantindo estabilidade e evitando regressões à medida que novas integrações com navegadores e LLMs foram adicionadas.
 
-![Localização dos testes no TestMiner](img/test-location.png)
+![Localização dos testes no TestMiner](exploring-testing-practices/img/test-location.png)
 
-![Crescimento dos testes ao longo das releases](img/test-history.png)
+![Crescimento dos testes ao longo das releases](exploring-testing-practices/img/test-history.png)
